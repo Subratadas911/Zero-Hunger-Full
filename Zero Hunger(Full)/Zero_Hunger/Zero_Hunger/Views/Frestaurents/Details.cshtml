@@ -1,0 +1,58 @@
+﻿@model Zero_Hunger.Models.Frestaurent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Zero Hunger</h2>
+
+<div>
+    <h4>Your Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.resname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fooditem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fooditem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.available)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.available)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit Your Request", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back ", "Index")
+</p>

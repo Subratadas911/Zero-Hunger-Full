@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ZhungerModelStoreContainer" CdmEntityContainer="ZhungerEntities">
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="ZhungerModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="employeename" ColumnName="employeename" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Frestaurents">
+      <EntityTypeMapping TypeName="ZhungerModel.Frestaurent">
+        <MappingFragment StoreEntitySet="Frestaurent">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="resname" ColumnName="resname" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="fooditem" ColumnName="fooditem" />
+          <ScalarProperty Name="available" ColumnName="available" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ngoes">
+      <EntityTypeMapping TypeName="ZhungerModel.ngo">
+        <MappingFragment StoreEntitySet="ngo">
+          <ScalarProperty Name="edate" ColumnName="edate" />
+          <ScalarProperty Name="sdate" ColumnName="sdate" />
+          <ScalarProperty Name="employeeid" ColumnName="employeeid" />
+          <ScalarProperty Name="resid" ColumnName="resid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fdistributions">
+      <EntityTypeMapping TypeName="ZhungerModel.Fdistribution">
+        <MappingFragment StoreEntitySet="Fdistribution">
+          <ScalarProperty Name="instruction" ColumnName="instruction" />
+          <ScalarProperty Name="exdate" ColumnName="exdate" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="employeeid" ColumnName="employeeid" />
+          <ScalarProperty Name="resname" ColumnName="resname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Restaurents">
+      <EntityTypeMapping TypeName="ZhungerModel.Restaurent">
+        <MappingFragment StoreEntitySet="Restaurent">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="restaurentname" ColumnName="restaurentname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="ZhungerModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
